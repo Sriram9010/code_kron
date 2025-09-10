@@ -24,3 +24,36 @@ for(int i=0;i<size;i++)
 return 0;
 }
 ==============================================================================================================================================================
+#include<stdio.h>
+int main()
+{
+//int a=1,2 error var can store 1 value 
+//int arr[100];
+int size;
+//or
+//int arr[5]={1,2,3,4,5}
+printf("enter how many elements you need!");
+scanf("%d",&size); //4
+int arr[size];
+for(int i=0;i<size;i++) // i ---- index arr[i]
+{
+ printf("enter the element for index %d\n",i);
+ scanf("%d",&arr[i]); // this is for reading 
+}
+ int add = arr[0];
+ int sub = arr[0];
+ int multi = arr[0];
+ 
+ for(int i=1;i<size;i++){
+     add += arr[i];
+     sub -= arr[i];
+     multi += arr[i];
+ }
+   printf("Sum = %d\n",add);
+   printf("sub = %d\n",sub);
+   printf("multi = %d\n",multi);
+   
+return 0;
+}
+==============================================================================================================================================================
+
