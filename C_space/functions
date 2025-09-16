@@ -60,5 +60,33 @@ return 0;
         return 0;
     }
 ============================================================================================================================================= 
+#include <stdio.h>
+int square(int n){
+    int sqr=0;
+    
+    printf("%d\n",n*n);
+    return n*n;
+}
+    int reverse(int n){
+        int rev=0;
+        while(n!=0){
+            rev = rev*10+n%10;
+            n/=10;
+        }
+        printf("%d",rev);
+        return rev;
+    }
+    int main(){
+        int n;
+        printf("enter the number:",n);
+        scanf("%d",&n);
+        int sqr1=square(n);
+        int res = reverse(n);
+        return 0;
+    }
+=============================================================================================================================================
+    
+    
+
     
 
