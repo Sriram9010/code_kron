@@ -63,7 +63,6 @@ return 0;
 #include <stdio.h>
 int square(int n){
     int sqr=0;
-    
     printf("%d\n",n*n);
     return n*n;
 }
@@ -80,11 +79,12 @@ int square(int n){
         int n;
         printf("enter the number:",n);
         scanf("%d",&n);
-        int sqr1=square(n);
-        int res = reverse(n);
+        square(n);
+        reverse(n);
         return 0;
     }
 =============================================================================================================================================
+
     
     
 
